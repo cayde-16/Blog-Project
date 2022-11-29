@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-m%9h@q^6*x(!@^jn_n4g_srd07l0-i%n94^ezd&bb0kzcbfir9
 DEBUG = False
 
 #commit this
-ALLOWED_HOSTS = ['memberss-only.herokuapp.com', '0.0.0.0', '127.0.0.1']
+ALLOWED_HOSTS = ['memberss-only.herokuapp.com', '0.0.0.0', '127.0.0.1', 'web-production-3ed1.up.railway.app']
 
 
 # Application definition
