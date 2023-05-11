@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-m%9h@q^6*x(!@^jn_n4g_srd07l0-i%n94^ezd&bb0kzcbfir9
 DEBUG = False
 
 #commit this
-ALLOWED_HOSTS = ['memberss-only.herokuapp.com', '0.0.0.0', '127.0.0.1', 'web-production-3ed1.up.railway.app']
+ALLOWED_HOSTS = ['memberss-only.herokuapp.com', '0.0.0.0', '127.0.0.1', 'web-production-3ed1.up.railway.app', '.vercel.app', '.now.sh.']
 
 
 # Application definition
@@ -140,7 +140,6 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_ROOT = BASE_DIR / 'static/images'
-#STATIC_ROOT =
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
