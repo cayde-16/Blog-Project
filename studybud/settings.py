@@ -23,11 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m%9h@q^6*x(!@^jn_n4g_srd07l0-i%n94^ezd&bb0kzcbfir9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
+DEBUG = True
 
 VERCEL_ENV = bool(os.environ.get('VERCEL_ENV'))
 VERCEL_GIT_COMMIT_SHA = os.environ.get('VERCEL_GIT_COMMIT_SHA')
-DEBUG = not VERCEL_ENV
+# DEBUG = not VERCEL_ENV
 #commit this
 ALLOWED_HOSTS = ['memberss-only.herokuapp.com', '0.0.0.0', '127.0.0.1', 'web-production-3ed1.up.railway.app', '.vercel.app', '.now.sh.']
 
@@ -94,8 +94,12 @@ WSGI_APPLICATION = 'studybud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'COJYv31gZsjikBC5hXqw',
+        'HOST': 'containers-us-west-51.railway.app',
+        'PORT': '7491',
     }
 }
 
