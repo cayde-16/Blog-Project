@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m%9h@q^6*x(!@^jn_n4g_srd07l0-i%n94^ezd&bb0kzcbfir9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-VERCEL_ENV = bool(os.environ.get('VERCEL_ENV'))
-VERCEL_GIT_COMMIT_SHA = os.environ.get('VERCEL_GIT_COMMIT_SHA')
+# VERCEL_ENV = bool(os.environ.get('VERCEL_ENV'))
+# VERCEL_GIT_COMMIT_SHA = os.environ.get('VERCEL_GIT_COMMIT_SHA')
 # DEBUG = not VERCEL_ENV
 #commit this
 ALLOWED_HOSTS = ['memberss-only.herokuapp.com', '0.0.0.0', '127.0.0.1', 'web-production-3ed1.up.railway.app', '.vercel.app', '.now.sh.']
@@ -142,16 +142,16 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = 'images/'
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / 'static'
-# ]
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]
 
 MEDIA_ROOT = BASE_DIR / 'static/images'
 
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+# STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
