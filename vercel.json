@@ -23,19 +23,5 @@
         "src": "/(.*)",
         "dest": "studybud/wsgi.py"
       }
-    ],
-    "functions": {
-      "api/*": {
-        "runtime": "python3.9",
-        "memory": 512,
-        "includeFiles": [
-          "studybud/*",
-          "pyproject.toml",
-          "poetry.lock"
-        ],
-        "excludeFiles": [
-          "node_modules/*"
-        ]
-      }
-    }
+    ]
   }
