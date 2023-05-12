@@ -29,7 +29,7 @@ DEBUG = False
 # VERCEL_GIT_COMMIT_SHA = os.environ.get('VERCEL_GIT_COMMIT_SHA')
 # DEBUG = not VERCEL_ENV
 #commit this
-ALLOWED_HOSTS = ['memberss-only.herokuapp.com', '0.0.0.0', '127.0.0.1', 'web-production-3ed1.up.railway.app', '.vercel.app', '.now.sh.']
+ALLOWED_HOSTS = ['memberss-only.herokuapp.com', '0.0.0.0', '127.0.0.1', '.railway.app', '.vercel.app', '.now.sh.']
 
 
 # Application definition
@@ -148,7 +148,7 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = BASE_DIR / 'static/images'
 
-# STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static')
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
