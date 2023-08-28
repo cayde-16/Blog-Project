@@ -97,9 +97,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'COJYv31gZsjikBC5hXqw',
-        'HOST': 'containers-us-west-51.railway.app',
-        'PORT': '7491',
+        'PASSWORD': 'x4nvw7zt70nZMTAyD5f2',
+        'HOST': 'containers-us-west-118.railway.app',
+        'PORT': '6179',
     }
 }
 
@@ -143,12 +143,12 @@ STATIC_URL = 'static/'
 MEDIA_URL = 'images/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static'
+    BASE_DIR / 'static',
 ]
 
 MEDIA_ROOT = BASE_DIR / 'static/images'
 
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static')
+# STATICFILES_DIRS = os.path.join(BASE_DIR, 'static')
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
