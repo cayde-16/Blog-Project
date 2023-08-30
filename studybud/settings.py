@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m%9h@q^6*x(!@^jn_n4g_srd07l0-i%n94^ezd&bb0kzcbfir9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # VERCEL_ENV = bool(os.environ.get('VERCEL_ENV'))
 # VERCEL_GIT_COMMIT_SHA = os.environ.get('VERCEL_GIT_COMMIT_SHA')
